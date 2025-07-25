@@ -1,0 +1,218 @@
+p.book {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar {
+  border: 0;
+  font-size: 14px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  padding: 0;
+  background: #101010;
+  box-shadow: 0 6px 10px -4px rgba(246, 241, 241, 0.15);
+}
+
+.navbar .navbar-brand {
+  font-weight: 500;
+  margin: 5px 0px;
+  padding: 20px 15px;
+  font-size: 20px;
+  color: #f9f4ee;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  line-height: 1.6;
+  margin: 15px 3px;
+  padding: 10px 15px;
+  opacity: .8;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #f9f5f1;
+}
+
+.navbar .navbar-nav .nav-item .nav-link p {
+  margin: 0px 0px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding: 15px 0;
+}
+
+
+.navbar .navbar-collapse .nav-item .dropdown-item i {
+  margin: 0 10px;
+  margin: 0 10px 0px 5px;
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.navbar .navbar-collapse.show .navbar-nav .nav-item {
+  padding-right: 10px;
+}
+
+.dropdown-menu {
+  background-color: #FFFFFF;
+  border: 0 none;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 0px;
+  right: 0;
+  left: auto
+}
+
+.dropdown-menu .dropdown-header {
+  color: #9A9A9A;
+  font-size: 12px;
+  padding: 10px 15px;
+}
+
+
+.dropdown-menu .dropdown-item {
+  color: #2b2a2a;
+  font-size: 16px;
+  padding: 10px 45px 10px 15px;
+  clear: both;
+  white-space: nowrap;
+  width: 100%;
+  display: block;
+}
+
+.navbar-collapse.has-image::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.8);
+    display: block;
+    content: "";
+    z-index: 1;
+
+}
+.navbar-transparent {
+      background-color: transparent !important;
+      border-bottom: 1px solid transparent;
+      transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    }
+    .navbar-scrolled {
+      background-color: #fff !important; 
+    }
+    .navbar.fixed-top {
+        position: fixed;
+        width: 100%;
+        z-index: 1030;
+    }
+
+  .navbar.navbar-transparent {
+  background: transparent !important;
+  padding-top: 25px;
+  box-shadow: none;
+}
+
+.navbar.navbar-transparent .navbar-brand {
+  color: #FFFFFF;
+}
+
+.page-header {
+  background-color: #B2AFAB;
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: 999px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header .filter::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.presentation-title {
+  font-size: 8em;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 200px;
+  color: #FFFFFF;
+  background: #fbf8ec;
+  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: -ms-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.presentation-subtitle{
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.section-dark {
+  position: relative;
+  color: white; 
+}
+
+.section-dark::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.section-dark > * {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-toggler-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: white;
+  margin: 4px 0;
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 250px; 
+    background-color: rgba(0, 0, 0, 0.95); 
+    padding: 10px;
+    border-radius: 0 0 0 10px;
+    z-index: 1050;
+  }
+}
+
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); /
+}
